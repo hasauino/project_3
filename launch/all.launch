@@ -1,0 +1,12 @@
+<!-- run everything -->
+
+<launch>
+    <node pkg="map_server" type="map_server" name="map_server" 
+    args="$(find project_3)/map/map.yaml"/>
+
+    <node pkg="project_3" type="map_analyzer.py" name="analyzer"/>
+
+    <node pkg="rviz" type="rviz" name="rviz" 
+    args="-d $(find project_3)/launch/config.rviz">
+    </node>
+</launch>

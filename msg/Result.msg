@@ -1,0 +1,4 @@
+int8 value
+float32 x
+float32 y
+string result

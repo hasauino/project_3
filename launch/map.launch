@@ -1,0 +1,6 @@
+<!-- publishes the map-->
+
+<launch>
+    <node pkg="map_server" type="map_server" name="map_server" 
+    args="$(find project_3)/map/map.yaml"/>  
+</launch>
